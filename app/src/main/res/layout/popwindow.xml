@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/bright_foreground_disabled_material_dark"
+   >
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Room code  :"
+        android:id="@+id/roomcodeView"
+        android:layout_marginTop="37dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/floor_actor"
+        android:layout_toStartOf="@+id/floor_actor"
+        android:textColor="@color/accent_material_light"
+        android:theme="@style/Animation.AppCompat.DropDownUp"
+        android:textSize="16sp"
+        android:padding="@dimen/abc_action_bar_default_padding_start_material"
+        android:paddingBottom="@dimen/abc_action_bar_progress_bar_size"
+       />
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Building name :"
+        android:id="@+id/builingnmaeView"
+        android:layout_below="@+id/roodcode_actor"
+        android:layout_alignLeft="@+id/roomcodeView"
+        android:layout_alignStart="@+id/roomcodeView"
+        android:theme="@style/Animation.AppCompat.DropDownUp"
+        android:textColor="@color/accent_material_light"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        android:padding="@dimen/abc_action_bar_default_padding_start_material"
+        android:paddingBottom="@dimen/abc_action_bar_progress_bar_size" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Floor :"
+        android:id="@+id/floorView"
+        android:layout_below="@+id/buildingname_actor"
+        android:layout_alignLeft="@+id/buildingname_actor"
+        android:layout_alignStart="@+id/buildingname_actor"
+        android:theme="@style/Animation.AppCompat.DropDownUp"
+        android:textColor="@color/accent_material_light"
+        android:textSize="16sp"
+        android:padding="@dimen/abc_action_bar_default_padding_start_material"
+        android:paddingBottom="@dimen/abc_action_bar_progress_bar_size" />
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Note :"
+        android:id="@+id/noteView"
+        android:theme="@style/Animation.AppCompat.DropDownUp"
+        android:textColor="@color/accent_material_light"
+        android:textSize="16sp"
+        android:padding="@dimen/abc_action_bar_default_padding_start_material"
+        android:paddingBottom="@dimen/abc_action_bar_progress_bar_size"
+        android:layout_below="@+id/floorView"
+        android:layout_alignLeft="@+id/floorView"
+        android:layout_alignStart="@+id/floorView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="codetext"
+        android:id="@+id/roodcode_actor"
+        android:theme="@style/Animation.AppCompat.DropDownUp"
+        android:textColor="@color/accent_material_light"
+        android:textSize="16sp"
+        android:layout_below="@+id/roomcodeView"
+        android:layout_alignLeft="@+id/builingnmaeView"
+        android:layout_alignStart="@+id/builingnmaeView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="buildingtext"
+        android:id="@+id/buildingname_actor"
+        android:layout_below="@+id/builingnmaeView"
+        android:layout_alignLeft="@+id/builingnmaeView"
+        android:layout_alignStart="@+id/builingnmaeView"
+        android:theme="@style/Animation.AppCompat.DropDownUp"
+        android:textColor="@color/accent_material_light"
+        android:textSize="16sp"
+        android:padding="@dimen/abc_action_bar_default_padding_start_material"
+        android:paddingBottom="@dimen/abc_action_bar_progress_bar_size" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="floortext"
+        android:id="@+id/floor_actor"
+        android:layout_alignTop="@+id/floorView"
+        android:layout_centerHorizontal="true"
+        android:theme="@style/Animation.AppCompat.DropDownUp"
+        android:textColor="@color/accent_material_light"
+        android:textSize="16sp"
+        android:padding="@dimen/abc_action_bar_default_padding_start_material"
+        android:paddingBottom="@dimen/abc_action_bar_progress_bar_size" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="notetext"
+        android:id="@+id/note_actor"
+        android:layout_alignTop="@+id/noteView"
+        android:layout_alignLeft="@+id/floor_actor"
+        android:layout_alignStart="@+id/floor_actor"
+        android:theme="@style/Animation.AppCompat.DropDownUp"
+        android:textColor="@color/accent_material_light"
+        android:textSize="16sp"
+        android:padding="@dimen/abc_action_bar_default_padding_start_material"
+        android:paddingBottom="@dimen/abc_action_bar_progress_bar_size" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Close"
+        android:id="@+id/close_button"
+        android:background="@color/accent_material_dark"
+        android:padding="5dp"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/note_actor"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="   Building information"
+        android:id="@+id/Topic_actor"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/accent_material_dark"
+        android:layout_alignParentBottom="false"
+        android:singleLine="false"
+        android:textColor="@color/abc_primary_text_material_dark"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
